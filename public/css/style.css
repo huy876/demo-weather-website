@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+h1 {
+    margin: 0;
+    padding-left: 60px;
+    background-color: #1675aa;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 68px;
+}
+.nav_bar {
+    height: 40px;
+    margin: 20px 50px
+}
+.nav_bar a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main {
+    margin: 0 50px;
+}
+
+.footer {
+    margin: 20px 50px;
+    font-style: italic;
+    font-size: 12px;
+}
