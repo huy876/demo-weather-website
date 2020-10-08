@@ -7,6 +7,9 @@ const geoCode = require('./utils/geocode')
 
 const app = express()
 
+//--- set up the port thet HEROKU provide (used for app.listen())
+const port = process.env.PORT || 3000 //this is just ternary for if lese
+
 //--- Define paths for Express config
 const publicDir = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -106,6 +109,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
 })
