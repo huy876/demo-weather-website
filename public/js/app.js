@@ -30,7 +30,8 @@ window.onload = () => {
             if(error) {
                 document.getElementById('forecast_info').innerHTML = `<p> ${error} </p>`
             } else {
-                const forecastMsg = '<p> Weather in ' + location + '</p>'
+                const forecastMsg = '<img src="' + forecast.weather_icons[0] + '" alt="weather image">'
+                                    + '<p> Weather in ' + location + '</p>'
                                     + '<p> Description: ' + forecast.weather_descriptions + '</p>'
                                     + '<p> Temperature: ' + forecast.temperature + '</p>'
                 document.getElementById('forecast_info').innerHTML = forecastMsg
